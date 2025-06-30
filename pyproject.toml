@@ -54,7 +54,20 @@ Download = "https://pypi.org/project/PyThea"
 package-mode = false
 
 [project.optional-dependencies]
-all = ["pythea"
+all = [
+  "jplephem",
+  "pooch",
+  "pytest",
+  "pytest-astropy",
+  "pytest-sugar",
+  "pytest-mpl",
+  "plotly",
+  "sphinx>=6.0.0",
+  "sphinx-automodapi",
+  "sphinx-gallery",
+  "jupyter_sphinx",
+  "sphinx-rtd-theme",
+  "numpydoc"
 ]
 tests = [
   "jplephem",
