@@ -30,7 +30,7 @@ authors = [
 
 dependencies = [
   "sunpy==6.0.4",
-  "parfive>=2.0.0",  # The issue with streamlit and asyncio is resolved (see #13). Keep this for a while to make sure everything works smoothly.
+  "parfive>=2.0.0",
   "pandas",
   "scipy",
   "matplotlib",
@@ -42,33 +42,13 @@ dependencies = [
   "sunpy_soar",
 ]
 
-dynamic = ["version"]
-
 [project.urls]
 Homepage = "https://www.pythea.org"
 Documentation = "https://www.pythea.org/en/latest/"
 "Source Code" = "https://github.com/AthKouloumvakos/PyThea"
 Download = "https://pypi.org/project/PyThea"
 
-[tool.poetry]
-package-mode = false
-
 [project.optional-dependencies]
-all = [
-  "jplephem",
-  "pooch",
-  "pytest",
-  "pytest-astropy",
-  "pytest-sugar",
-  "pytest-mpl",
-  "plotly",
-  "sphinx>=6.0.0",
-  "sphinx-automodapi",
-  "sphinx-gallery",
-  "jupyter_sphinx",
-  "sphinx-rtd-theme",
-  "numpydoc"
-]
 tests = [
   "jplephem",
   "pooch",
@@ -104,3 +84,7 @@ version_file = "PyThea/_version.py"
 
 [project.scripts]
 pythea = "PyThea.pythea_cli:main"
+
+# Add Poetry configuration for Streamlit compatibility
+[tool.poetry]
+package-mode = false
