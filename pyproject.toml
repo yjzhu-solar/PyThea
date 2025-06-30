@@ -51,7 +51,21 @@ Documentation = "https://www.pythea.org/en/latest/"
 Download = "https://pypi.org/project/PyThea"
 
 [project.optional-dependencies]
-all = ["PyThea[tests,docs]"]
+all = [
+  "jplephem",
+  "pooch",
+  "pytest",
+  "pytest-astropy",
+  "pytest-sugar",
+  "pytest-mpl".
+  "plotly",
+  "sphinx>=6.0.0",
+  "sphinx-automodapi",
+  "sphinx-gallery",
+  "jupyter_sphinx",
+  "sphinx-rtd-theme",
+  "numpydoc"
+]
 tests = [
   "jplephem",
   "pooch",
