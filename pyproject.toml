@@ -9,6 +9,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "PyThea"
 description = "PyThea: A software package to reconstruct the 3D structure of CMEs and shock waves"
+version = "1.1.0"
 requires-python = ">=3.11"
 readme = "README.md"
 license = { file = "LICENSE.md" }
