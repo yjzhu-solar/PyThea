@@ -57,7 +57,7 @@ all = [
   "pytest",
   "pytest-astropy",
   "pytest-sugar",
-  "pytest-mpl".
+  "pytest-mpl",
   "plotly",
   "sphinx>=6.0.0",
   "sphinx-automodapi",
