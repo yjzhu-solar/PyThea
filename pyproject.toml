@@ -1,10 +1,23 @@
-[build-system]
-requires = [
-  "setuptools>=62.1",
-  "setuptools_scm[toml]>=8.0.1",
-  "wheel",
-]
-build-backend = "setuptools.build_meta"
+[tool.poetry]
+name = "PyThea"
+version = "1.1.0"
+description = "PyThea: A software package to reconstruct the 3D structure of CMEs and shock waves"
+authors = ["Athanasios Kouloumvakos <athkouloumvakos@gmail.com>"]
+packages = [{include = "PyThea"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+sunpy = "6.0.4"
+parfive = ">=2.0.0"
+pandas = "*"
+scipy = "*"
+matplotlib = "*"
+aiapy = "*"
+numexpr = "*"
+streamlit = "*"
+seaborn = "*"
+pyvista = "*"
+sunpy_soar = "*"
 
 [project]
 name = "PyThea"
